@@ -1,18 +1,8 @@
-document.querySelectorAll(".checkout-button").forEach(function(button) {
-    button.addEventListener("click", function () {
-      fetch("https://hooks.zapier.com/hooks/catch/22495654/20lijbc/?event=checkout_click&source=website_fazza");
-      window.open("https://shopee.co.id/product/1375568290/27763379356?d_id=22e56&uls_trackid=51pqk2du0075&utm_content=ENrvnymFGLgmFHhm3JUQPKKbfqR", "_blank");
-    });
-  });
-
 // Navbar
 function toggleMenu() {
   const menu = document.querySelector('.navbar-menu');
   menu.classList.toggle('show');
 }
-
-
-
 
 const carousel = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".carousel img");
