@@ -1,0 +1,725 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #ffffff;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.carousel {
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.carousel-inner {
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-item img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 7%;
+    color : black;
+}
+
+/* Tombol navigasi */
+/* Gaya navbar */
+.navbar {
+    width: 100vw;
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Latar transparan */
+    color: #fff;
+    z-index: 1000;
+  }
+  
+  /* Tombol hamburger */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+    margin-left: auto; 
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+  }
+  
+  /* Gaya logo dan nama brand */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-logo img {
+    width: 30px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 3px; /* Jarak antara gambar dan teks brand */
+  }
+  
+  .navbar-logo span {
+    font-size: 20px; /* Ukuran teks nama brand */
+    font-weight: bold;
+    color: #d48e1c; /* Warna teks brand */
+  }
+  
+  
+  /* Menu dropdown */
+  .navbar-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    z-index: 999;
+  }
+  
+  .navbar-menu.show {
+    display: flex;
+  }
+  
+  .navbar-menu a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: #d48e1c;
+  }
+
+/* produk kami */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto ;
+    padding: 20px;
+    max-width: 97vw;
+    align-items: center;
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
+    margin-left: auto;
+}
+
+.product {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-right: 20px;
+    text-align: start;
+    width: 33.33%;
+    position: relative;
+    gap: 20px;
+}
+
+.link-produk {
+    color: black;
+    text-decoration: none;
+}
+
+.product img {
+    width: calc(100% - 20px);
+    height: auto;
+    border-radius: 10px;
+}
+
+.product .front, .back {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+.front {
+    opacity: 1; /* Front image is visible by default */
+  }
+  
+.back {
+    opacity: 0; /* Back image is hidden by default */
+    position: absolute; /* Overlap the front image */
+    top: 0px;
+    left: 0px;
+  }
+  
+.front:hover {
+    opacity: 0; /* Hide front image on hover */
+    cursor: pointer;
+  }
+  
+.back:hover {
+    opacity: 1; /* Show back image on hover */
+    cursor: pointer;
+  }
+  
+.product-info {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Monument Grotesk Medium', sans-serif;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.product-card { 
+    box-shadow: none; /* Remove the box shadow */
+    margin: 10px; /* Adjust margin for less empty space */
+  }
+  
+  .product-image { /* Assuming the image has this class */
+    width: 100%; /* Make image take up full width of the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+
+/* Fazza-Konten 1  */
+.container-2 {
+    display: flex;
+    border-radius: 8px;
+    margin: 0 30px;
+    overflow: hidden;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+
+.content {
+    margin-left: 3%;
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.subheading {
+    color: #3a656f;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #3a656f;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.description {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #3a656f;
+    padding: 10px 20px;
+    border: 2px solid #3a656f;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+    position: relative;
+    width: 205px;
+    align-self: center;
+}
+
+.button:hover {
+    background-color: #3a656f;
+    color: #ffffff;
+}
+
+.button .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.button:hover .arrow {
+    transform: translateX(5px);
+}
+
+.image-konten {
+    width: 540px;
+    height: auto;
+}
+
+.image-konten img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.content-3 {
+    margin-top: 40px;
+}
+
+
+/* Fazza Produk */
+.container-3 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    background: linear-gradient(135deg, #f8f8f8, #ffffff, #f8f8f8);
+    height: 80vh;
+}
+
+.left-text {
+    left: 10%;
+    padding: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.8;
+    color: #333;
+    z-index: 10;
+}
+
+.left-text p {
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.left-text p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.center-video {
+    /* flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1; */
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); */
+}
+
+video {
+    height: 80vh;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer-2 {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 20px;
+    padding-right: 30px;
+    margin-top: 60px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand  {
+    display: flex;
+  }
+  
+  .footer-brand img {
+    width: 28px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 3px; /* Jarak antara gambar dan teks brand */
+  }
+  
+  .footer-brand h1 {
+    font-size: x-large;
+    color: #ffaf33;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .footer-tagline {
+    margin-left: 12%;
+  }
+  
+  .footer-tagline h2 {
+    font-size: xx-large;
+    margin: 0;
+    color: #ffaf33;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+  }
+  
+  .footer-links ul li {
+    font-size: 16px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #ffaf33;
+    font-weight: 500;
+  }
+  
+  .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #ffaf33;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-socials img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-socials img:hover {
+    transform: scale(1.1);
+  }
+
+/* Responsif */
+
+/* Laptop */
+@media (max-width: 1024px) { 
+   /* produk kami */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto ;
+    padding: 20px;
+    max-width: 97vw;
+    align-items: center;
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100% + 0px);
+    margin-left: auto;
+}
+
+.product {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-right: 20px;
+    text-align: start;
+    width: 33.33%;
+    position: relative;
+    gap: 20px;
+}
+
+.left-text {
+    display: none;
+}
+
+.footer-links {
+    display: none;
+}
+
+.footer-tagline h2 {
+    color:#ffaf33;
+    font-size: x-large;
+}
+
+.footer-2 {
+    padding: 20px;
+}
+
+.left-text {
+    display: none;
+}
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%; /* Pastikan lebar tetap 100% */
+      }
+    
+      .carousel-slide {
+        max-width: 100%; /* Jangan mengubah lebar slide */
+      }
+    
+      body {
+        overflow-x: hidden; /* Hilangkan scroll horizontal */
+      }
+
+
+    .navbar-logo span {
+        font-size: 18px;
+    }
+
+    .search-icon {
+        font-size: 20px;
+    }
+
+    .carousel-slide h2 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .nav-button {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    body {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .header {
+        flex-direction: column; /* Buat header lebih vertikal */
+        text-align: center;
+    }
+
+    .main {
+        padding: 10px; /* Persempit padding */
+    }
+
+    .carousel {
+        max-width: 100%;
+        transform: translateX(0); /* Reset on smaller screens */
+
+    }
+    .product img {
+      width: 100%;
+    }
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%; /* Buat card penuh */
+        margin-bottom: 20px;
+    }
+
+    .content {
+        padding-left: 0;
+        margin-left: 0;
+        width: 100vw;
+    }
+
+    .image-konten {
+        width: 100vw;
+    }
+
+    .content p {
+        margin-bottom: 15px;
+    }
+
+    .button {
+        width: auto;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer-tagline h2 {
+        color:#ffaf33;
+        font-size: x-large;
+    }
+
+    .footer-2 {
+        padding: 20px;
+    }
+
+    .left-text {
+        display: none;
+    }
+
+    h1 {
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    .shop-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .product h3 {
+        font-size: calc(1.6rem + .6vw);
+    }
+
+    .product p {
+        font-size: calc(1rem + .6vw);
+    }
+
+    .product {
+        width: 70%;
+        align-self: center;
+        padding: 0;
+        margin: auto;
+    }
+
+}
+
+/* Mobile screen size */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column; /* Ubah menu jadi vertikal */
+        gap: 10px;
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card {
+        padding: 5px; /* Kurangi padding untuk kartu */
+        text-align: center; /* Pusatkan teks */
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .container-2 {
+        flex-direction: column;
+    }
+
+    .content {
+        max-width: 100%;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+
+    .image-konten img {
+        width: 86vw;
+    }
+
+    .product {
+        width: 100%;
+        align-self: center;
+        padding: 0;
+        margin: auto;
+    }
+
+
+    .footer-links {
+        display: none;
+    }
+
+    .footer-tagline {
+        margin: 10px auto;
+    }
+
+    .footer-tagline {
+        margin: 10px auto;
+        
+    }
+    .footer-bottom {
+      margin-top: 10px;
+    }
+    .footer-tagline h2 {
+        color:#ffaf33;
+        font-size: xx-large;
+    }
+    .footer-brand, .left-text{
+        display: none;
+    }
+}

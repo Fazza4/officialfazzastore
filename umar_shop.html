@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <title>Fazza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/LOGO_FAZZA-.png" type="image/x-icon" />
+    <link rel="stylesheet" href="y.css" />
+  </head>
+  <body>
+    <!-- Menu dropdown -->
+    <div class="navbar-menu">
+      <a href="index.html">Beranda</a>
+      <a href="umar_shop.html">Produk</a>
+      <a href="aboutus.html">Cerita</a>
+      <a href="kualitas.html">Kualitas</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Logo Brand di tengah kiri -->
+      <a href="index.html" class="navbar-logo">
+        <img src="img/LOGO_FAZZA-.png" alt="" height="25px" />
+        <span style="color: #d48e1c">FAZZA</span>
+      </a>
+
+      <!-- Tombol hamburger -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="left-section">
+        <i class="fas fa-bars menu-icon"> </i>
+        <div class="carousel">
+          <img
+          src="img/Umar_Fazza.jpg" style="object-fit: fill; width: 100%;"
+          data-desktop="img/Umar_Fazza.jpg"
+          data-tablet="img/Umar_Fazza.jpg"
+          data-mobile="img/umar_shop_mobile.png"
+          alt="Carousel Image"
+          />
+        </div>
+
+        <div class="carousel-controls">
+          <i class="fas fa-chevron-left" onclick="prevSlide()"> </i>
+          <i class="fas fa-chevron-right" onclick="nextSlide()"> </i>
+        </div>
+        <div class="carousel-indicators"></div>
+      </div>
+
+      <div class="right-section responsif-none">
+        <div class="product-title">
+          <div>Fazza - Umar Edition</div>
+        </div>
+        <div class="isi-rightsection">
+          <p>
+            Fazza Umar Edition hadir untuk kamu yang berani tampil beda dengan
+            berpijak pada nilai - nilai positif dan kepemimpinan sejati
+          </p>
+        </div>
+        <div class="detail-produk">
+          <p>
+            🌱 Bahan: Cotton Combed 24s - nyaman, tebal, dan tidak panas saat
+            dipakai
+          </p>
+          <p>
+            🎨 Sablon: DTF berkualitas tinggi dengan warna tajam dan tahan lama
+          </p>
+          <p>
+            💸 Harga : Rp 79.000 <span class="harga-coret">Rp 150.000</span>
+          </p>
+        </div>
+        <div class="size-selection">
+          <span> Tersedia Ukuran : </span>
+          <div class="size-options">
+            <div>S</div>
+            <div>M</div>
+            <div>L</div>
+            <div>XL</div>
+            <div>XXL</div>
+          </div>
+        </div>
+        <a href="https://id.shp.ee/rL5FBaT "><button class="select-size-btn">Checkout</button></a>
+      </div>
+    </div>
+
+    <!-- Responsif -->
+
+    <div class="right-section width-1024">
+      <div class="product-title">
+        <div>Fazza - Umar Edition</div>
+      </div>
+      <div class="isi-rightsection" style="text-align: justify">
+        <p>
+          Fazza Umar Edition hadir untuk kamu yang berani tampil beda dengan
+          berpijak pada nilai - nilai positif dan kepemimpinan sejati
+        </p>
+      </div>
+      <div class="detail-produk">
+        <p>
+          🌱 Bahan: Cotton Combed 24s - nyaman, tebal, dan tidak panas saat
+          dipakai
+        </p>
+        <p>
+          🎨 Sablon: DTF berkualitas tinggi dengan warna tajam dan tahan lama
+        </p>
+        <p>💸 Harga : Rp 79.000 <span class="harga-coret">Rp 150.000</span></p>
+      </div>
+      <div class="size-selection">
+        <span> Tersedia Ukuran : </span>
+        <div class="size-options">
+          <div>S</div>
+          <div>M</div>
+          <div>L</div>
+          <div>XL</div>
+          <div>XXL</div>
+        </div>
+      </div>
+      <a href="https://id.shp.ee/rL5FBaT "><button class="select-size-btn">Checkout</button></a>
+    </div>
+
+    <!-- Shoop -->
+    <div class="container-2">
+      <h1>PRODUK KAMI</h1>
+      <div class="shop-container">
+        <div class="product dilihat">
+          <a href="umar_shop.html" class="link-produk">
+            <img
+              src="img/Umar_mockup.png"
+              alt="T-shirt Front"
+              class="front img"
+            />
+            <img src="img/Umar_mockup.png" alt="T-shirt Back" class="back img " />
+            <div class="product-info">
+              <h3>Umar bin Khattab</h3>
+              <p>Rp. 79.000</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="uwais_shop.html" class="link-produk">
+            <img src="img/Uwais_mockup.png" alt="T-shirt Front" class="front" />
+            <img src="img/Uwais_mockup.png" alt="T-shirt Back" class="back" />
+            <div class="product-info">
+              <h3>Uwais Al - Qorni</h3>
+              <p>Rp. 79.000</p>
+            </div>
+          </a>
+        </div>
+        <div class="product product-musa">
+          <a href="musa_shop.html" class="link-produk">
+            <img src="img/Musa_mockup.png" alt="T-shirt Front" class="front" />
+            <img src="img/Musa_mockup.png" alt="T-shirt Back" class="back" />
+            <div class="product-info">
+              <h3>Musa</h3>
+              <p>Rp. 79.000</p>
+            </div>
+          </a>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-2">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="img/LOGO_FAZZA-.png" alt="" />
+          <h1>FAZZA</h1>
+        </div>
+        <div class="footer-tagline">
+          <h2>KENALKAN DIRIMU!</h2>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="umar_shop.html">Produk</a></li>
+            <li><a href="aboutus.html">Cerita</a></li>
+            <li><a href="kualitas.html">Kualitas</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; FAZZA. All Rights Reserved.</p>
+        <div class="footer-socials">
+          <a href="#"><img src="img/tiktok_fazza.png" alt="Tiktok" /></a>
+          <a
+            href="https://www.instagram.com/officialfazzastore?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            ><img src="img/ig_fazza.png" alt="Instagram"
+          /></a>
+          <a href="https://shopee.co.id/product/1375568290/27763379356?d_id=22e56&uls_trackid=51pqk2du0075&utm_content=ENrvnymFGLgmFHhm3JUQPKKbfqR" target="_blank"><img src="img/belanja_fazza.png" alt="Shoppe"/></a>
+        </div>
+      </div>
+    </footer>
+    <script src="y.js"></script>
+  </body>
+</html>
